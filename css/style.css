@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-color: #1db954;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 350px;
+}
+
+header h1 {
+    margin-top: 5px;
+}
+
+main {
+    width: 700px;
+    margin: 30px auto;
+}
+
+.player {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.musica {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.musica:hover {
+    background-color: #1db954;
+    transform: translateY(-10px);
+    transition: 1s;
+    color: black;
+}
+
+.musica h3 {
+    margin: 0;
+}
+
+.musica p {
+    margin-bottom: 0;
+}
