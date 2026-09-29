@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nilson Produções</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <img src="../img/ChatGPT Image 29 de set. de 2026, 08_37_25.png" class="logo">
-
+        <img src="../img/ChatGPT Image 29 de set. de 2026, 08_37_25.png" class="logo" alt="Logo Nilson Produções">
         <h1>Nilson Produções</h1>
         <p>Player de Música</p>
     </header>
@@ -19,28 +20,25 @@
     <main>
 
         <div class="player">
+            <img id="capaAtual" src="https://via.placeholder.com/200?text=Sem+Capa" alt="Capa do Álbum"
+                class="capa-player">
             <h2>Tocando agora</h2>
             <h3 id="tituloAtual">Selecione uma música</h3>
             <p id="artistaAtual">Nenhum artista</p>
+            <p id="albumAtual" class="album-nome"></p>
 
             <audio id="audioPlayer" controls></audio>
         </div>
 
         <h2>Lista de Músicas</h2>
 
-        <div class="musica" data-audio="musicas/musica1.mp3">
-            <h3>Música 1</h3>
-            <p>Artista 1</p>
+        <div class="busca-container">
+            <input type="text" id="inputBusca" placeholder="Digite a música ou artista (ex: Queen, Alok, Rock...)">
+            <button id="btnBuscar">Buscar</button>
         </div>
 
-        <div class="musica" data-audio="musicas/musica2.mp3">
-            <h3>Música 2</h3>
-            <p>Artista 2</p>
-        </div>
-
-        <div class="musica" data-audio="musicas/musica3.mp3">
-            <h3>Música 3</h3>
-            <p>Artista 3</p>
+        <div id="listaMusicas">
+            <p style="text-align: center; color: #aaa;">Digite o nome de uma música ou artista acima...</p>
         </div>
 
     </main>
